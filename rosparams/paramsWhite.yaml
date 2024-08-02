@@ -1,0 +1,17 @@
+angular_speed: 0.3
+linear_speed: 0.2
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_eren_stealth_15m_b12ue__36339: http://eren-Stealth-15M-B12UE:36339/
+    host_eren_stealth_15m_b12ue__44275: http://eren-Stealth-15M-B12UE:44275/
+rosversion: '1.16.0
+
+  '
+run_id: e0e3957c-50c4-11ef-82b9-cfd2b830c885
+turtlesim:
+  background_b: 255
+  background_g: 255
+  background_r: 255
