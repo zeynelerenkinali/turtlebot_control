@@ -54,7 +54,6 @@ CMAKE_BINARY_DIR = /home/eren/catkin_ws/build
 include turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/progress.make
 
 turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus: /home/eren/catkin_ws/devel/share/roseus/ros/turtlebot_control/msg/Num.l
-turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus: /home/eren/catkin_ws/devel/share/roseus/ros/turtlebot_control/srv/Cond.l
 turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus: /home/eren/catkin_ws/devel/share/roseus/ros/turtlebot_control/manifest.l
 
 
@@ -63,18 +62,12 @@ turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus: /home/eren
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from turtlebot_control/Num.msg"
 	cd /home/eren/catkin_ws/build/turtlebot_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/eren/catkin_ws/src/turtlebot_control/msg/Num.msg -Iturtlebot_control:/home/eren/catkin_ws/src/turtlebot_control/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turtlebot_control -o /home/eren/catkin_ws/devel/share/roseus/ros/turtlebot_control/msg
 
-/home/eren/catkin_ws/devel/share/roseus/ros/turtlebot_control/srv/Cond.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/eren/catkin_ws/devel/share/roseus/ros/turtlebot_control/srv/Cond.l: /home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from turtlebot_control/Cond.srv"
-	cd /home/eren/catkin_ws/build/turtlebot_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv -Iturtlebot_control:/home/eren/catkin_ws/src/turtlebot_control/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turtlebot_control -o /home/eren/catkin_ws/devel/share/roseus/ros/turtlebot_control/srv
-
 /home/eren/catkin_ws/devel/share/roseus/ros/turtlebot_control/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for turtlebot_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for turtlebot_control"
 	cd /home/eren/catkin_ws/build/turtlebot_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/eren/catkin_ws/devel/share/roseus/ros/turtlebot_control turtlebot_control geometry_msgs std_msgs
 
 turtlebot_control_generate_messages_eus: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus
 turtlebot_control_generate_messages_eus: /home/eren/catkin_ws/devel/share/roseus/ros/turtlebot_control/msg/Num.l
-turtlebot_control_generate_messages_eus: /home/eren/catkin_ws/devel/share/roseus/ros/turtlebot_control/srv/Cond.l
 turtlebot_control_generate_messages_eus: /home/eren/catkin_ws/devel/share/roseus/ros/turtlebot_control/manifest.l
 turtlebot_control_generate_messages_eus: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/build.make
 

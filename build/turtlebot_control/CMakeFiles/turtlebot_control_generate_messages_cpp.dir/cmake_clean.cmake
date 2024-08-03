@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "/home/eren/catkin_ws/devel/include/turtlebot_control/Cond.h"
   "/home/eren/catkin_ws/devel/include/turtlebot_control/Num.h"
   "CMakeFiles/turtlebot_control_generate_messages_cpp"
 )

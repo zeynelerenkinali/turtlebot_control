@@ -89,28 +89,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -123,6 +101,17 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -134,6 +123,17 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -211,6 +211,51 @@ turtlebot_control_generate_messages_nodejs: turtlebot_control/CMakeFiles/turtleb
 turtlebot_control_generate_messages_nodejs/fast:
 	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_nodejs.dir/build.make turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_nodejs.dir/build
 .PHONY : turtlebot_control_generate_messages_nodejs/fast
+
+# Convenience name for target.
+turtlebot_control/CMakeFiles/turtlebot_control_genlisp.dir/rule:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/turtlebot_control_genlisp.dir/rule
+.PHONY : turtlebot_control/CMakeFiles/turtlebot_control_genlisp.dir/rule
+
+# Convenience name for target.
+turtlebot_control_genlisp: turtlebot_control/CMakeFiles/turtlebot_control_genlisp.dir/rule
+
+.PHONY : turtlebot_control_genlisp
+
+# fast build rule for target.
+turtlebot_control_genlisp/fast:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/turtlebot_control_genlisp.dir/build.make turtlebot_control/CMakeFiles/turtlebot_control_genlisp.dir/build
+.PHONY : turtlebot_control_genlisp/fast
+
+# Convenience name for target.
+turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/rule:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/rule
+.PHONY : turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+turtlebot_control_generate_messages_lisp: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/rule
+
+.PHONY : turtlebot_control_generate_messages_lisp
+
+# fast build rule for target.
+turtlebot_control_generate_messages_lisp/fast:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/build.make turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/build
+.PHONY : turtlebot_control_generate_messages_lisp/fast
+
+# Convenience name for target.
+turtlebot_control/CMakeFiles/turtlebot_control_geneus.dir/rule:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/turtlebot_control_geneus.dir/rule
+.PHONY : turtlebot_control/CMakeFiles/turtlebot_control_geneus.dir/rule
+
+# Convenience name for target.
+turtlebot_control_geneus: turtlebot_control/CMakeFiles/turtlebot_control_geneus.dir/rule
+
+.PHONY : turtlebot_control_geneus
+
+# fast build rule for target.
+turtlebot_control_geneus/fast:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/turtlebot_control_geneus.dir/build.make turtlebot_control/CMakeFiles/turtlebot_control_geneus.dir/build
+.PHONY : turtlebot_control_geneus/fast
 
 # Convenience name for target.
 turtlebot_control/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
@@ -393,19 +438,19 @@ roscpp_generate_messages_nodejs/fast:
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
-turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+turtlebot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : turtlebot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+geometry_msgs_generate_messages_py: turtlebot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_py
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+geometry_msgs_generate_messages_py/fast:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make turtlebot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 turtlebot_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
@@ -423,34 +468,19 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-turtlebot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : turtlebot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+turtlebot_control/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+.PHONY : turtlebot_control/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_py: turtlebot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+std_srvs_generate_messages_cpp: turtlebot_control/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 
-.PHONY : geometry_msgs_generate_messages_py
+.PHONY : std_srvs_generate_messages_cpp
 
 # fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make turtlebot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-turtlebot_control/CMakeFiles/turtlebot_control_genlisp.dir/rule:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/turtlebot_control_genlisp.dir/rule
-.PHONY : turtlebot_control/CMakeFiles/turtlebot_control_genlisp.dir/rule
-
-# Convenience name for target.
-turtlebot_control_genlisp: turtlebot_control/CMakeFiles/turtlebot_control_genlisp.dir/rule
-
-.PHONY : turtlebot_control_genlisp
-
-# fast build rule for target.
-turtlebot_control_genlisp/fast:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/turtlebot_control_genlisp.dir/build.make turtlebot_control/CMakeFiles/turtlebot_control_genlisp.dir/build
-.PHONY : turtlebot_control_genlisp/fast
+std_srvs_generate_messages_cpp/fast:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make turtlebot_control/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
 
 # Convenience name for target.
 turtlebot_control/CMakeFiles/roscpp_generate_messages_py.dir/rule:
@@ -513,6 +543,51 @@ rosgraph_msgs_generate_messages_lisp/fast:
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/rule:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/rule
+.PHONY : turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+turtlebot_control_generate_messages_eus: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/rule
+
+.PHONY : turtlebot_control_generate_messages_eus
+
+# fast build rule for target.
+turtlebot_control_generate_messages_eus/fast:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/build.make turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/build
+.PHONY : turtlebot_control_generate_messages_eus/fast
+
+# Convenience name for target.
+turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+turtlebot_control/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+.PHONY : turtlebot_control/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_eus: turtlebot_control/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make turtlebot_control/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+# Convenience name for target.
 turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
 	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
@@ -543,19 +618,64 @@ _turtlebot_control_generate_messages_check_deps_Num/fast:
 .PHONY : _turtlebot_control_generate_messages_check_deps_Num/fast
 
 # Convenience name for target.
-turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/rule:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/rule
-.PHONY : turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/rule
+turtlebot_control/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+.PHONY : turtlebot_control/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-turtlebot_control_generate_messages_lisp: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/rule
+std_srvs_generate_messages_lisp: turtlebot_control/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
 
-.PHONY : turtlebot_control_generate_messages_lisp
+.PHONY : std_srvs_generate_messages_lisp
 
 # fast build rule for target.
-turtlebot_control_generate_messages_lisp/fast:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/build.make turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/build
-.PHONY : turtlebot_control_generate_messages_lisp/fast
+std_srvs_generate_messages_lisp/fast:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make turtlebot_control/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+# Convenience name for target.
+turtlebot_control/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+.PHONY : turtlebot_control/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_nodejs: turtlebot_control/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make turtlebot_control/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+turtlebot_control/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : turtlebot_control/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_py: turtlebot_control/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/std_srvs_generate_messages_py.dir/build.make turtlebot_control/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
 
 # Convenience name for target.
 turtlebot_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
@@ -617,66 +737,6 @@ turtlebot_control_gencpp/fast:
 	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/turtlebot_control_gencpp.dir/build.make turtlebot_control/CMakeFiles/turtlebot_control_gencpp.dir/build
 .PHONY : turtlebot_control_gencpp/fast
 
-# Convenience name for target.
-turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make turtlebot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/rule:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/rule
-.PHONY : turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-turtlebot_control_generate_messages_eus: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/rule
-
-.PHONY : turtlebot_control_generate_messages_eus
-
-# fast build rule for target.
-turtlebot_control_generate_messages_eus/fast:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/build.make turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_eus.dir/build
-.PHONY : turtlebot_control_generate_messages_eus/fast
-
-# Convenience name for target.
-turtlebot_control/CMakeFiles/_turtlebot_control_generate_messages_check_deps_Cond.dir/rule:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/_turtlebot_control_generate_messages_check_deps_Cond.dir/rule
-.PHONY : turtlebot_control/CMakeFiles/_turtlebot_control_generate_messages_check_deps_Cond.dir/rule
-
-# Convenience name for target.
-_turtlebot_control_generate_messages_check_deps_Cond: turtlebot_control/CMakeFiles/_turtlebot_control_generate_messages_check_deps_Cond.dir/rule
-
-.PHONY : _turtlebot_control_generate_messages_check_deps_Cond
-
-# fast build rule for target.
-_turtlebot_control_generate_messages_check_deps_Cond/fast:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/_turtlebot_control_generate_messages_check_deps_Cond.dir/build.make turtlebot_control/CMakeFiles/_turtlebot_control_generate_messages_check_deps_Cond.dir/build
-.PHONY : _turtlebot_control_generate_messages_check_deps_Cond/fast
-
-# Convenience name for target.
-turtlebot_control/CMakeFiles/turtlebot_control_geneus.dir/rule:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot_control/CMakeFiles/turtlebot_control_geneus.dir/rule
-.PHONY : turtlebot_control/CMakeFiles/turtlebot_control_geneus.dir/rule
-
-# Convenience name for target.
-turtlebot_control_geneus: turtlebot_control/CMakeFiles/turtlebot_control_geneus.dir/rule
-
-.PHONY : turtlebot_control_geneus
-
-# fast build rule for target.
-turtlebot_control_geneus/fast:
-	cd /home/eren/catkin_ws/build && $(MAKE) -f turtlebot_control/CMakeFiles/turtlebot_control_geneus.dir/build.make turtlebot_control/CMakeFiles/turtlebot_control_geneus.dir/build
-.PHONY : turtlebot_control_geneus/fast
-
 src/basic_controller.o: src/basic_controller.cpp.o
 
 .PHONY : src/basic_controller.o
@@ -716,6 +776,10 @@ help:
 	@echo "... turtlebot_control_genpy"
 	@echo "... turtlebot_control_gennodejs"
 	@echo "... turtlebot_control_generate_messages_nodejs"
+	@echo "... install/strip"
+	@echo "... turtlebot_control_genlisp"
+	@echo "... turtlebot_control_generate_messages_lisp"
+	@echo "... turtlebot_control_geneus"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... rebuild_cache"
 	@echo "... basic_controller"
@@ -729,28 +793,28 @@ help:
 	@echo "... turtlebot_control_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... test"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... install/strip"
-	@echo "... turtlebot_control_genlisp"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... turtlebot_control_generate_messages"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... turtlebot_control_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... std_srvs_generate_messages_eus"
 	@echo "... install/local"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... _turtlebot_control_generate_messages_check_deps_Num"
-	@echo "... turtlebot_control_generate_messages_lisp"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... test"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... std_srvs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... turtlebot_control_generate_messages_cpp"
 	@echo "... turtlebot_control_gencpp"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... turtlebot_control_generate_messages_eus"
-	@echo "... _turtlebot_control_generate_messages_check_deps_Cond"
-	@echo "... turtlebot_control_geneus"
 	@echo "... src/basic_controller.o"
 	@echo "... src/basic_controller.i"
 	@echo "... src/basic_controller.s"

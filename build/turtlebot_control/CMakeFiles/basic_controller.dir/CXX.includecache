@@ -13,6 +13,8 @@ ros/ros.h
 /home/eren/catkin_ws/src/turtlebot_control/src/ros/ros.h
 geometry_msgs/Twist.h
 /home/eren/catkin_ws/src/turtlebot_control/src/geometry_msgs/Twist.h
+std_srvs/Empty.h
+/home/eren/catkin_ws/src/turtlebot_control/src/std_srvs/Empty.h
 
 /opt/ros/noetic/include/geometry_msgs/Twist.h
 string
@@ -699,6 +701,46 @@ ros/forwards.h
 /opt/ros/noetic/include/ros/ros/forwards.h
 
 /opt/ros/noetic/include/rosconsole/macros_generated.h
+
+/opt/ros/noetic/include/std_srvs/Empty.h
+ros/service_traits.h
+-
+std_srvs/EmptyRequest.h
+-
+std_srvs/EmptyResponse.h
+-
+
+/opt/ros/noetic/include/std_srvs/EmptyRequest.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/opt/ros/noetic/include/std_srvs/EmptyResponse.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
 
 /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 ros/macros.h

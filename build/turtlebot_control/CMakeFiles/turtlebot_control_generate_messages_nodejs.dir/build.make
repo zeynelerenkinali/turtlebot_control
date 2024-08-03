@@ -54,7 +54,6 @@ CMAKE_BINARY_DIR = /home/eren/catkin_ws/build
 include turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_nodejs.dir/progress.make
 
 turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_nodejs: /home/eren/catkin_ws/devel/share/gennodejs/ros/turtlebot_control/msg/Num.js
-turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_nodejs: /home/eren/catkin_ws/devel/share/gennodejs/ros/turtlebot_control/srv/Cond.js
 
 
 /home/eren/catkin_ws/devel/share/gennodejs/ros/turtlebot_control/msg/Num.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
@@ -62,14 +61,8 @@ turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_nodejs: /home/e
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from turtlebot_control/Num.msg"
 	cd /home/eren/catkin_ws/build/turtlebot_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/eren/catkin_ws/src/turtlebot_control/msg/Num.msg -Iturtlebot_control:/home/eren/catkin_ws/src/turtlebot_control/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turtlebot_control -o /home/eren/catkin_ws/devel/share/gennodejs/ros/turtlebot_control/msg
 
-/home/eren/catkin_ws/devel/share/gennodejs/ros/turtlebot_control/srv/Cond.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/eren/catkin_ws/devel/share/gennodejs/ros/turtlebot_control/srv/Cond.js: /home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from turtlebot_control/Cond.srv"
-	cd /home/eren/catkin_ws/build/turtlebot_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv -Iturtlebot_control:/home/eren/catkin_ws/src/turtlebot_control/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turtlebot_control -o /home/eren/catkin_ws/devel/share/gennodejs/ros/turtlebot_control/srv
-
 turtlebot_control_generate_messages_nodejs: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_nodejs
 turtlebot_control_generate_messages_nodejs: /home/eren/catkin_ws/devel/share/gennodejs/ros/turtlebot_control/msg/Num.js
-turtlebot_control_generate_messages_nodejs: /home/eren/catkin_ws/devel/share/gennodejs/ros/turtlebot_control/srv/Cond.js
 turtlebot_control_generate_messages_nodejs: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_nodejs.dir/build.make
 
 .PHONY : turtlebot_control_generate_messages_nodejs

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "/home/eren/catkin_ws/devel/share/common-lisp/ros/turtlebot_control/msg/Num.lisp"
-  "/home/eren/catkin_ws/devel/share/common-lisp/ros/turtlebot_control/srv/Cond.lisp"
   "CMakeFiles/turtlebot_control_generate_messages_lisp"
 )
 

@@ -54,7 +54,6 @@ CMAKE_BINARY_DIR = /home/eren/catkin_ws/build
 include turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_cpp.dir/progress.make
 
 turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_cpp: /home/eren/catkin_ws/devel/include/turtlebot_control/Num.h
-turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_cpp: /home/eren/catkin_ws/devel/include/turtlebot_control/Cond.h
 
 
 /home/eren/catkin_ws/devel/include/turtlebot_control/Num.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
@@ -63,16 +62,8 @@ turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_cpp: /home/eren
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from turtlebot_control/Num.msg"
 	cd /home/eren/catkin_ws/src/turtlebot_control && /home/eren/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/eren/catkin_ws/src/turtlebot_control/msg/Num.msg -Iturtlebot_control:/home/eren/catkin_ws/src/turtlebot_control/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turtlebot_control -o /home/eren/catkin_ws/devel/include/turtlebot_control -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/eren/catkin_ws/devel/include/turtlebot_control/Cond.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/eren/catkin_ws/devel/include/turtlebot_control/Cond.h: /home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv
-/home/eren/catkin_ws/devel/include/turtlebot_control/Cond.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/eren/catkin_ws/devel/include/turtlebot_control/Cond.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from turtlebot_control/Cond.srv"
-	cd /home/eren/catkin_ws/src/turtlebot_control && /home/eren/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv -Iturtlebot_control:/home/eren/catkin_ws/src/turtlebot_control/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turtlebot_control -o /home/eren/catkin_ws/devel/include/turtlebot_control -e /opt/ros/noetic/share/gencpp/cmake/..
-
 turtlebot_control_generate_messages_cpp: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_cpp
 turtlebot_control_generate_messages_cpp: /home/eren/catkin_ws/devel/include/turtlebot_control/Num.h
-turtlebot_control_generate_messages_cpp: /home/eren/catkin_ws/devel/include/turtlebot_control/Cond.h
 turtlebot_control_generate_messages_cpp: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_cpp.dir/build.make
 
 .PHONY : turtlebot_control_generate_messages_cpp

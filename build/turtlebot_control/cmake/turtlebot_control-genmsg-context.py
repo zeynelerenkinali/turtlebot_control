@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/eren/catkin_ws/src/turtlebot_control/msg/Num.msg"
-services_str = "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv"
+services_str = ""
 pkg_name = "turtlebot_control"
 dependencies_str = "geometry_msgs;std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

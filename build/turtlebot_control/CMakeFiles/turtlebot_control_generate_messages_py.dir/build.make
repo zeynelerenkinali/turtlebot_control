@@ -54,7 +54,6 @@ CMAKE_BINARY_DIR = /home/eren/catkin_ws/build
 include turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_py.dir/progress.make
 
 turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_py: /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/msg/_Num.py
-turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_py: /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv/_Cond.py
 turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_py: /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/msg/__init__.py
 turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_py: /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv/__init__.py
 
@@ -64,26 +63,18 @@ turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_py: /home/eren/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG turtlebot_control/Num"
 	cd /home/eren/catkin_ws/build/turtlebot_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/eren/catkin_ws/src/turtlebot_control/msg/Num.msg -Iturtlebot_control:/home/eren/catkin_ws/src/turtlebot_control/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turtlebot_control -o /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/msg
 
-/home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv/_Cond.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv/_Cond.py: /home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV turtlebot_control/Cond"
-	cd /home/eren/catkin_ws/build/turtlebot_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv -Iturtlebot_control:/home/eren/catkin_ws/src/turtlebot_control/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turtlebot_control -o /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv
-
 /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/msg/__init__.py: /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/msg/_Num.py
-/home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/msg/__init__.py: /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv/_Cond.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for turtlebot_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for turtlebot_control"
 	cd /home/eren/catkin_ws/build/turtlebot_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/msg --initpy
 
 /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv/__init__.py: /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/msg/_Num.py
-/home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv/__init__.py: /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv/_Cond.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for turtlebot_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python srv __init__.py for turtlebot_control"
 	cd /home/eren/catkin_ws/build/turtlebot_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv --initpy
 
 turtlebot_control_generate_messages_py: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_py
 turtlebot_control_generate_messages_py: /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/msg/_Num.py
-turtlebot_control_generate_messages_py: /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv/_Cond.py
 turtlebot_control_generate_messages_py: /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/msg/__init__.py
 turtlebot_control_generate_messages_py: /home/eren/catkin_ws/devel/lib/python3/dist-packages/turtlebot_control/srv/__init__.py
 turtlebot_control_generate_messages_py: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_py.dir/build.make

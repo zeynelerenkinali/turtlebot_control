@@ -54,7 +54,6 @@ CMAKE_BINARY_DIR = /home/eren/catkin_ws/build
 include turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/progress.make
 
 turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp: /home/eren/catkin_ws/devel/share/common-lisp/ros/turtlebot_control/msg/Num.lisp
-turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp: /home/eren/catkin_ws/devel/share/common-lisp/ros/turtlebot_control/srv/Cond.lisp
 
 
 /home/eren/catkin_ws/devel/share/common-lisp/ros/turtlebot_control/msg/Num.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
@@ -62,14 +61,8 @@ turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp: /home/ere
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from turtlebot_control/Num.msg"
 	cd /home/eren/catkin_ws/build/turtlebot_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/eren/catkin_ws/src/turtlebot_control/msg/Num.msg -Iturtlebot_control:/home/eren/catkin_ws/src/turtlebot_control/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turtlebot_control -o /home/eren/catkin_ws/devel/share/common-lisp/ros/turtlebot_control/msg
 
-/home/eren/catkin_ws/devel/share/common-lisp/ros/turtlebot_control/srv/Cond.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/eren/catkin_ws/devel/share/common-lisp/ros/turtlebot_control/srv/Cond.lisp: /home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eren/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from turtlebot_control/Cond.srv"
-	cd /home/eren/catkin_ws/build/turtlebot_control && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv -Iturtlebot_control:/home/eren/catkin_ws/src/turtlebot_control/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turtlebot_control -o /home/eren/catkin_ws/devel/share/common-lisp/ros/turtlebot_control/srv
-
 turtlebot_control_generate_messages_lisp: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp
 turtlebot_control_generate_messages_lisp: /home/eren/catkin_ws/devel/share/common-lisp/ros/turtlebot_control/msg/Num.lisp
-turtlebot_control_generate_messages_lisp: /home/eren/catkin_ws/devel/share/common-lisp/ros/turtlebot_control/srv/Cond.lisp
 turtlebot_control_generate_messages_lisp: turtlebot_control/CMakeFiles/turtlebot_control_generate_messages_lisp.dir/build.make
 
 .PHONY : turtlebot_control_generate_messages_lisp

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "turtlebot_control: 1 messages, 1 services")
+message(STATUS "turtlebot_control: 1 messages, 0 services")
 
 set(MSG_I_FLAGS "-Iturtlebot_control:/home/eren/catkin_ws/src/turtlebot_control/msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
@@ -22,11 +22,6 @@ add_custom_target(_turtlebot_control_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "turtlebot_control" "/home/eren/catkin_ws/src/turtlebot_control/msg/Num.msg" ""
 )
 
-get_filename_component(_filename "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv" NAME_WE)
-add_custom_target(_turtlebot_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "turtlebot_control" "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv" ""
-)
-
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -41,12 +36,6 @@ _generate_msg_cpp(turtlebot_control
 )
 
 ### Generating Services
-_generate_srv_cpp(turtlebot_control
-  "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/turtlebot_control
-)
 
 ### Generating Module File
 _generate_module_cpp(turtlebot_control
@@ -61,8 +50,6 @@ add_dependencies(turtlebot_control_generate_messages turtlebot_control_generate_
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/eren/catkin_ws/src/turtlebot_control/msg/Num.msg" NAME_WE)
-add_dependencies(turtlebot_control_generate_messages_cpp _turtlebot_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv" NAME_WE)
 add_dependencies(turtlebot_control_generate_messages_cpp _turtlebot_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -82,12 +69,6 @@ _generate_msg_eus(turtlebot_control
 )
 
 ### Generating Services
-_generate_srv_eus(turtlebot_control
-  "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/turtlebot_control
-)
 
 ### Generating Module File
 _generate_module_eus(turtlebot_control
@@ -102,8 +83,6 @@ add_dependencies(turtlebot_control_generate_messages turtlebot_control_generate_
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/eren/catkin_ws/src/turtlebot_control/msg/Num.msg" NAME_WE)
-add_dependencies(turtlebot_control_generate_messages_eus _turtlebot_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv" NAME_WE)
 add_dependencies(turtlebot_control_generate_messages_eus _turtlebot_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -123,12 +102,6 @@ _generate_msg_lisp(turtlebot_control
 )
 
 ### Generating Services
-_generate_srv_lisp(turtlebot_control
-  "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/turtlebot_control
-)
 
 ### Generating Module File
 _generate_module_lisp(turtlebot_control
@@ -143,8 +116,6 @@ add_dependencies(turtlebot_control_generate_messages turtlebot_control_generate_
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/eren/catkin_ws/src/turtlebot_control/msg/Num.msg" NAME_WE)
-add_dependencies(turtlebot_control_generate_messages_lisp _turtlebot_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv" NAME_WE)
 add_dependencies(turtlebot_control_generate_messages_lisp _turtlebot_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -164,12 +135,6 @@ _generate_msg_nodejs(turtlebot_control
 )
 
 ### Generating Services
-_generate_srv_nodejs(turtlebot_control
-  "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/turtlebot_control
-)
 
 ### Generating Module File
 _generate_module_nodejs(turtlebot_control
@@ -184,8 +149,6 @@ add_dependencies(turtlebot_control_generate_messages turtlebot_control_generate_
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/eren/catkin_ws/src/turtlebot_control/msg/Num.msg" NAME_WE)
-add_dependencies(turtlebot_control_generate_messages_nodejs _turtlebot_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv" NAME_WE)
 add_dependencies(turtlebot_control_generate_messages_nodejs _turtlebot_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -205,12 +168,6 @@ _generate_msg_py(turtlebot_control
 )
 
 ### Generating Services
-_generate_srv_py(turtlebot_control
-  "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/turtlebot_control
-)
 
 ### Generating Module File
 _generate_module_py(turtlebot_control
@@ -225,8 +182,6 @@ add_dependencies(turtlebot_control_generate_messages turtlebot_control_generate_
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/eren/catkin_ws/src/turtlebot_control/msg/Num.msg" NAME_WE)
-add_dependencies(turtlebot_control_generate_messages_py _turtlebot_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv" NAME_WE)
 add_dependencies(turtlebot_control_generate_messages_py _turtlebot_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

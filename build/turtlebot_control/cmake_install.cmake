@@ -42,10 +42,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot_control/srv" TYPE FILE FILES "/home/eren/catkin_ws/src/turtlebot_control/srv/Cond.srv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot_control/cmake" TYPE FILE FILES "/home/eren/catkin_ws/build/turtlebot_control/catkin_generated/installspace/turtlebot_control-msg-paths.cmake")
 endif()
 
