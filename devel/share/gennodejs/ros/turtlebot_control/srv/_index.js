@@ -1,8 +1,8 @@
 
 "use strict";
 
-let Cond = require('./Cond.js')
+let setVel = require('./setVel.js')
 
 module.exports = {
-  Cond: Cond,
+  setVel: setVel,
 };

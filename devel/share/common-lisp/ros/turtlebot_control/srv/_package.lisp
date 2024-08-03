@@ -1,10 +1,10 @@
 (cl:defpackage turtlebot_control-srv
   (:use )
   (:export
-   "COND"
-   "<COND-REQUEST>"
-   "COND-REQUEST"
-   "<COND-RESPONSE>"
-   "COND-RESPONSE"
+   "SETVEL"
+   "<SETVEL-REQUEST>"
+   "SETVEL-REQUEST"
+   "<SETVEL-RESPONSE>"
+   "SETVEL-RESPONSE"
   ))
 
