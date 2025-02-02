@@ -25,6 +25,7 @@ This repository contains a ROS-based project for controlling the **TurtleBot**. 
 ---
 
 ## Repository Structure
+```bash
 turtlebot_control/
 ├── launch/ # ROS launch files
 ├── scripts/ # Python scripts for control and navigation
@@ -32,7 +33,7 @@ turtlebot_control/
 ├── worlds/ # Gazebo world files for simulation
 ├── README.md # This file
 └── LICENSE # License file
-
+```
 ---
 
 ## Requirements
